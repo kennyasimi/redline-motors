@@ -1,0 +1,54 @@
+body{
+    background: rgb(230, 230, 230);
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    color: blue;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+h2{
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    background: rgb(200,200,200);
+}
+
+.short{
+    color: rgb(120,0,0);
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+
+.full{
+    color: rgb(20,20,20);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.features {
+    color: rgb(251, 12, 12);
+    font-size: 15px;
+    background: rgb(230,230,230);
+    width: 300px;
+    padding: 10px;
+    list-style: none; 
+}
+
+.features li {
+    padding-left: 25px; 
+    background-image: url("images/marker.png");
+    background-repeat: no-repeat;
+    background-position: 0 2px;
+    background-size: 15px 15px; 
+    margin-bottom: 5px; 
+}
