@@ -22,7 +22,7 @@ $user = $users[$login];
 if (password_verify($password, $user['password_hash'])) {
     $_SESSION['user_id'] = $user['id'];
 
-    $line = "$time | ip=$ip | login=$login | action=SUCCESS_LOGIn";
+    $line = "$time | ip=$ip | login=$login | action=SUCCESS_LOGIN";
     file_put_contents($file, $line . PHP_EOL, FILE_APPEND);
 
     header("Location: index.php");
