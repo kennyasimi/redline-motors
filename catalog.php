@@ -10,7 +10,9 @@
 <ul>
     <li><a href="index.php">Главная</a></li>
 </ul>
-<a href="logout.php">Выйти</a>
+<button onclick="window.location.href= 'logout.php'">
+    Выйти
+</button>
 
 
 <hr>
