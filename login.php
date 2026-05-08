@@ -11,12 +11,27 @@ session_start()
 
 <h2>Вход</h2>
 
-<form method= "POST" action= "auth.php">
-    <input type = "text" name= "login" placeholder= "Логин"><br>
-    <input type = "password" name = "password" placeholder = "Пароль"><br>
-    <button type = "submit">Войти</button>
+<form id="loginForm">
+
+    <input type="email" id="email" placeholder="Email" required>
+    <br><br>
+
+    <input type="password" id="password" placeholder="Password" required>
+    <br><br>
+
+    <button type="submit">Войти</button>
+
 </form>
+<p>
+    Нет аккаунта?
+    <a href="register.php">Регистрация</a>
+</p>
+
+<p id="message"></p>
+
+<script src="login.js"></script>
 
 </body>
 </html>
 
+# commit message- login page updated for API integration
