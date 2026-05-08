@@ -33,5 +33,3 @@ session_start()
 
 </body>
 </html>
-
-# commit message- login page updated for API integration
