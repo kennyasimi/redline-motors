@@ -66,7 +66,7 @@ class UserController {
 
             echo json_encode([
                 'status' => 'error',
-                'message' => 'Email already exists'
+                'message' => 'User already exists'
             ]);
 
             return;
