@@ -66,7 +66,7 @@ class UserController {
 
             echo json_encode([
                 'status' => 'error',
-                'message' => 'This is from the register function'
+                'message' => 'Email already exists'
             ]);
 
             return;
