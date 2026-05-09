@@ -1,0 +1,12 @@
+[
+    {
+        "id": 1,
+        "email": "johndoe123@outlook.com",
+        "password": "$2y$10$KiLaT.9p4WgMPsb\/C3UDvu\/AEHJmz4WZnGhkAr5WDuoXCQXmOI5UG"
+    },
+    {
+        "id": 2,
+        "email": "maryjane456@gmail.com",
+        "password": "$2y$10$HtflzZRY2bUYf0Jgc9g\/COIAPT18OZqoEEDVPj9IWRyaL2dZBJOBe"
+    }
+]
