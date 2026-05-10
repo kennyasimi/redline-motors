@@ -18,6 +18,7 @@ if (!isset($_SESSION['user_id'])) {
 <ul>
     <li><a href="index.php">Главная</a></li>
     <li><a href="catalog.php">Каталог</a></li>
+    <li><a href="changepassword.php">Изменить пароль</a></li>
 </ul>
 <button onclick="window.location.href= 'logout.php'">
     Выйти
