@@ -148,11 +148,16 @@ class UserController {
 
     $data = json_decode(file_get_contents("php://input"), true);
 
-    if (!isset($data['password'])) {
+    if (
+        !isset($data['old_password']) ||
+        !isset($data['password'])
+    ) {
+
         echo json_encode([
             'status' => 'error',
-            'message' => 'Password required'
+            'message' => 'Missing fields'
         ]);
+
         return;
     }
 
@@ -161,6 +166,26 @@ class UserController {
     foreach ($users as &$user) {
 
         if ($user['id'] == $id) {
+
+            // verify old password
+
+            if (
+                !password_verify(
+                    $data['old_password'],
+                    $user['password']
+                )
+            ) {
+
+                echo json_encode([
+                    'status' => 'error',
+                    'message' => 'Old password incorrect'
+                ]);
+
+                return;
+            }
+
+
+            // update password
 
             $user['password'] = password_hash(
                 $data['password'],
