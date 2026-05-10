@@ -5,7 +5,7 @@ require_once __DIR__ . '/../controllers/UserController.php';
 $method = $_SERVER['REQUEST_METHOD'];
 $full_uri = $_SERVER['REQUEST_URI'];
 
-// Extract the actual API path
+// Extracting the actual API path
 if (preg_match('#/redlinemotors/api-project/api/index.php(/[^?]*)#', $full_uri, $matches)) {
     $path = $matches[1];
 } else {
@@ -14,7 +14,7 @@ if (preg_match('#/redlinemotors/api-project/api/index.php(/[^?]*)#', $full_uri, 
 
 $controller = new UserController();
 
-// EXACT path matching
+
 if ($method === 'POST' && $path === '/api/v1/register') {
     $controller->register();
 }
