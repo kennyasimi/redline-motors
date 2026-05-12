@@ -6,9 +6,7 @@ const userId = document.getElementById("user_id").value;
 const deleteBtn = document.getElementById("deleteAccountBtn");
 
 
-// =========================
 // CHANGE PASSWORD
-// =========================
 
 form.addEventListener("submit", async (e) => {
 
@@ -64,9 +62,7 @@ form.addEventListener("submit", async (e) => {
 
 
 
-// =========================
 // DELETE ACCOUNT
-// =========================
 
 deleteBtn.addEventListener("click", async () => {
 
